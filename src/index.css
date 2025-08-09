@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Custom classes for CodeBlocks and HomePage */
+.code-border {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.homepage_bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/Images/bghome.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Gradient backgrounds for code blocks */
+.codeblock1 {
+  background: linear-gradient(90deg, #0EA5E9 0%, #14B8A6 50%, #5EEAD4 100%);
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.codeblock2 {
+  background: linear-gradient(90deg, #0284C7 0%, #0D9488 50%, #2DD4BF 100%);
+  opacity: 0.1;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* Universal Spinner Class */
+.spinner {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #4b5563;
+  border-top: 3px solid #0EA5E9;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Swiper Custom Styles */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0EA5E9 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(14, 165, 233, 0.9) !important;
+  color: #000 !important;
+  transform: scale(1.1);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.swiper-pagination-bullet {
+  background: #6b7280 !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #0EA5E9 !important;
+  opacity: 1 !important;
+}
+
+/* Section heading styles */
+.section_heading {
+  @apply text-3xl font-semibold text-richblack-5 mb-4;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Ocean Blue Theme Button Classes */
+.yellowButton {
+  @apply cursor-pointer rounded-md bg-ocean-300 px-[20px] py-[8px] font-semibold text-white transition-all duration-200 hover:bg-ocean-400 hover:scale-95;
+}
+
+.blackButton {
+  @apply cursor-pointer rounded-md border border-richblack-700 bg-richblack-800 px-[20px] py-[8px] font-semibold text-white transition-all duration-200 hover:bg-richblack-700 hover:scale-95;
+}
