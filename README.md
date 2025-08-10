@@ -1,6 +1,6 @@
 
 # LumenEd - EdTech Platform
-:rocket: [Link to website][https://studynotion-frontend.vercel.app/]
+:rocket: [Link to website][https://lumened.netlify.app/]
 
 
 ![Main Page](images/mainpage.png)
